@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Javascript</title>
+</head>
+<body>
+    <h1 id="ganti1">Belajar Javascript</h1>
+    <button onclick="hallo()">Javascript</button>
+
+    <div>
+        <h1 id="ganti2">Tes</h1>
+        <button onclick="nama()">Nama</button>
+    </div>
+
+    <div>
+        <h1 id="saya">Nama saya</h1>
+        <input type="text" name="" id="nama">
+        <button onclick="namasaya()">Nama saya</button>
+    </div>
+        <h1 id="hasil">Hasil</h1>
+        <input type="number" id="bil1">
+        <input type="number" id="bil2">
+        <button onclick="kali()">kali</button>
+        <button onclick="jumlah()">jumlah</button>
+    </div>
+</body>
+<script>
+    function hallo(){
+        document.getElementById('ganti1').innerHTML="Hallo Javascript";
+    }
+    function nama(){
+        document.getElementById('ganti2').innerHTML="Heffina Nisnaniardini";
+    }
+    function namasaya(){
+        let nama=document.getElementById('nama').value;
+        document.getElementById('saya').innerHTML="Nama Saya " + nama;
+    }
+    function kali(){
+        let a=document.getElementById('bil1').value;
+        let b=document.getElementById('bil2').value;
+        let hasil=a*b;
+        document.getElementById('hasil').innerHTML=hasil;
+    }
+    function jumlah(){
+        let a=parseInt(document.getElementById('bil1').value);
+        let b=parseInt(document.getElementById('bil2').value);
+        let hasil=a+b;
+        document.getElementById('hasil').innerHTML=hasil;
+    }
+</script>
+</html>
